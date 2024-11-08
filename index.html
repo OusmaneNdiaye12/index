@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOREYNI DIGITAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --aqua: #00ffff;
+            --aqua-dark: #008b8b;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background-color: var(--aqua) !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--aqua-dark);
+        }
+
+        .nav-link {
+            color: var(--aqua-dark);
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--aqua);
+        }
+
+        .overview {
+            background-color: var(--aqua-dark);
+        }
+
+        .btn-primary {
+            background-color: var(--aqua-dark);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--aqua);
+        }
+
+        footer {
+            background-color: var(--aqua-dark);
+        }
+
+        footer h5, footer p {
+            color: white;
+        }
+
+        footer a {
+            color: #f1f1f1;
+        }
+
+        footer a:hover {
+            color: var(--aqua);
+        }
+
+        .btn-light {
+            background-color: white;
+            color: var(--aqua-dark);
+            border: none;
+        }
+
+        .btn-light:hover {
+            background-color: var(--aqua);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.png" alt="Logo" width="50px" height="50px" class="me-2">
+                    NOREYNI DIGITAL
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="A propos.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="overview text-white text-center py-5 mt-5">
+        <div class="container">
+            <h1 class="title">Bienvenue chez NOREYNI DIGITAL</h1>
+            <p class="lead">Votre satisfaction, notre priorité!</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-light me-2">En savoir plus</a>
+                <a href="Contact.html" class="btn btn-light">Contactez-Nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Promotionnelle -->
+    <div class="text-center my-4">
+        <img src="images/affiche.png" alt="Affiche" class="img-fluid" id="Monaffiche">
+    </div>
+
+    <!-- Footer with Contact Form -->
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>À propos</h5>
+                    <p>Nous fournissons des solutions graphiques innovantes pour aider nos clients à atteindre leurs objectifs.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="A propos.html">À propos</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-md-4">
+                    <h5>Contactez-nous</h5>
+                    <form>
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 NOREYNI DIGITAL. Votre satisfaction, notre priorité.</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <h5>Suivez-nous</h5>
+            <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" class="text-white me-3">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ousmane-ndiaye-92aa86302?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSqnJW4X5SdiFDeKZNvhA9A%3D%3D" target="_blank" class="text-white me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.tiktok.com/@VotreNomUtilisateurTikTok" target="_blank" class="text-white">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+        
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Change navbar background on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
