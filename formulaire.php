@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Port = 587; 
 
             // Entêtes et contenu de l'email
-            $mail->setFrom('noreynindiaye3@example.com', 'NOREYNI DIGITAL'); 
-            $mail->addAddress('noreynindiaye3@example.com'); 
+            $mail->setFrom('noreynindiaye3@gmail.com', 'NOREYNI DIGITAL'); 
+            $mail->addAddress('noreynindiaye3@gmail.com'); 
             $mail->addReplyTo($email, $nom); 
             $mail->addCustomHeader('X-Mailer', 'PHP/' . phpversion());
 
