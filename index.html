@@ -16,8 +16,15 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/arriere plan.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
         }
 
         .navbar {
@@ -87,29 +94,29 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="images/logo.png" alt="Logo" width="50px" height="50px" class="me-2">
-                    NOREYNI DIGITAL
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="A propos.html">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-                        
-                    </ul>
-                </div>
+   <!-- Navbar -->
+   <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Logo" width="50px" height="50px" class="me-2">
+                NOREYNI DIGITAL
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link menu-button" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link menu-button" href="A propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link menu-button active" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link menu-button" href="Contact.html">Contact</a></li>
+                
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <!-- Hero Section -->
     <section class="overview text-white text-center py-5 mt-5">
@@ -127,6 +134,23 @@
     <div class="text-center my-4">
         <img src="images/affiche.png" alt="Affiche" class="img-fluid" id="Monaffiche">
     </div>
+<!-- Galerie d'images -->
+<div class="container my-4">
+    <br><h2 class="text-center mb-3" style="color: white;">Notre Entreprise</h2><br>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <img src="images/projet1.jpeg" class="img-fluid rounded" alt="Projet 1">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img src="images/projet2.jpeg" class="img-fluid rounded" alt="Projet 2">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img src="images/projet3.jpeg" class="img-fluid rounded" alt="Projet 3">
+        </div>
+    </div>
+</div>
+
+
 
     <!-- Footer with Contact Form -->
     <footer class="text-white py-4">
@@ -168,7 +192,7 @@
                 </div>
             </div>
             <div class="text-center mt-3">
-                <p>&copy; 2024 NOREYNI DIGITAL. Votre satisfaction, notre priorité.</p>
+                <p>&copy; 2024 NOREYNI DIGITAL.Tous droits réservé.</p>
             </div>
         </div>
         <div class="text-center mt-3">
@@ -202,3 +226,4 @@
 </body>
 
 </html>
+
