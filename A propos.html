@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - NOREYNI DIGITAL</title>
+    <title>NOREYNI DIGITAL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     <style>
         :root {
             --aqua: #00ffff;
             --aqua-dark: #008b8b;
         }
 
-     
         body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/arriere plan.jpg');
@@ -51,34 +51,17 @@
             color: var(--aqua);
         }
 
-        .menu-button {
-            margin: 0 10px;
-            padding: 8px 15px;
-            background-color: #e0f7fa;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        .menu-button:hover {
+        .overview {
             background-color: var(--aqua-dark);
-            color: white !important;
         }
 
-        .about-section {
-            background-color: white;
-            padding: 60px 0;
+        .btn-primary {
+            background-color: var(--aqua-dark);
+            border: none;
         }
 
-        .about-title {
-            color: var(--aqua-dark);
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
+        .btn-primary:hover {
+            background-color: var(--aqua);
         }
 
         footer {
@@ -96,60 +79,84 @@
         footer a:hover {
             color: var(--aqua);
         }
+
+        .btn-light {
+            background-color: white;
+            color: var(--aqua-dark);
+            border: none;
+        }
+
+        .btn-light:hover {
+            background-color: var(--aqua);
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="images/logo.png" alt="Logo" width="50px" height="50px" class="me-2">
-                    NOREYNI DIGITAL
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link menu-button" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link menu-button active" href="A propos.html">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link menu-button" href="Blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link menu-button" href="Contact.html">Contact</a></li>
-                       
-                    </ul>
-                </div>
+   <!-- Navbar -->
+   <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Logo" width="50px" height="50px" class="me-2">
+                NOREYNI DIGITAL
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link menu-button" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link menu-button" href="A propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link menu-button " href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link menu-button" href="Contact.html">Contact</a></li>
+                
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <!-- About Section -->
-    <section class="about-section mt-5">
+    <!-- Hero Section -->
+    <section class="overview text-white text-center py-5 mt-5">
         <div class="container">
-            <h2 class="text-center about-title">À propos de NOREYNI DIGITAL</h2>
-            <p class="about-text mt-4">
-                Chez NOREYNI DIGITAL, nous croyons en la puissance du design et de l'innovation pour transformer votre vision en réalité. 
-                Depuis notre création, nous nous engageons à fournir des services graphiques de qualité supérieure, 
-                aidant les entreprises et les individus à se démarquer dans un monde numérique en constante évolution.
-            </p>
-            <p class="about-text">
-                Notre équipe de graphistes talentueux combine créativité et expertise technique pour concevoir des visuels attrayants et efficaces. 
-                Que ce soit pour des supports marketing, des identités visuelles ou des solutions numériques, nous mettons tout en œuvre 
-                pour répondre aux besoins spécifiques de nos clients.
-            </p>
-            <p class="about-text">
-                Nous nous engageons également à maintenir des relations solides avec nos clients, 
-                basées sur la confiance, l'intégrité et une communication transparente. NOREYNI DIGITAL est votre partenaire de choix pour atteindre vos objectifs graphiques.
-            </p>
+            <h1 class="title">Bienvenue chez NOREYNI DIGITAL</h1>
+            <p class="lead">Votre satisfaction, notre priorité!</p>
+            <div class="d-flex justify-content-center">
+                
+                <a href="Contact.html" class="btn btn-light">Contactez-Nous</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Image Promotionnelle -->
+    <div class="text-center my-4">
+        <img src="images/affiche.png" alt="Affiche" class="img-fluid" id="Monaffiche">
+    </div>
+<!-- Galerie d'images -->
+<div class="container my-4">
+    <br><h2 class="text-center mb-3" style="color: white;">Notre Entreprise</h2><br>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <img src="images/projet1.jpeg" class="img-fluid rounded" alt="Projet 1">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img src="images/projet2.jpeg" class="img-fluid rounded" alt="Projet 2">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img src="images/projet3.jpeg" class="img-fluid rounded" alt="Projet 3">
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer with Contact Form -->
     <footer class="text-white py-4">
         <div class="container">
             <div class="row">
-                <!-- About Section in Footer -->
+                <!-- About Section -->
                 <div class="col-md-4">
                     <h5>À propos</h5>
                     <p>Nous fournissons des solutions graphiques innovantes pour aider nos clients à atteindre leurs objectifs.</p>
@@ -159,13 +166,13 @@
                     <h5>Liens utiles</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Accueil</a></li>
-                        <a href="A propos.html">A propos</a><br>
-                        <a href="Blog.html">Blog</a><br>
-                        <a href="Contact.html">Contact</a>
+                        <li><a href="A propos.html">À propos</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </div>
-                  <!-- Contact Form -->
-                  <div class="col-md-4">
+                <!-- Contact Form -->
+                <div class="col-md-4">
                     <h5>Contactez-nous</h5>
                     <form>
                         <div class="mb-2">
@@ -184,29 +191,24 @@
                     </form>
                 </div>
             </div>
-             <!-- Contact Section -->
-             <div class="col-md-4">
-                <h5>Contactez-nous</h5>
-                <p>Email: noreynindiaye3@gmail.com</p>
-                <p>Téléphone: +221 77 804 09 73</p>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 noreynidigital.Tous droits réservé.</p>
             </div>
         </div>
-
+        <div class="text-center mt-3">
+            <h5>Suivez-nous</h5>
+            <a href="" target="_blank" class="text-white me-3">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="htage%3Ad_flagship3_profile_view_base_contact_details%3BSqnJW4X5SdiFDeKZNvhA9A%3D%3D" target="_blank" class="text-white me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.tiktok.com/@noreyni528?_t=8rTBd1y81hf&_r=1" target="_blank" class="text-white">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+        </div>
         
-           
-                <div class="text-center mt-3">
-                    <h5>Suivez-nous</h5>
-                    <a href="" target="_blank" class="text-white me-3">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ousmane-ndiaye-92aa86302?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSqnJW4X5SdiFDeKZNvhA9A%3D%3D" target="_blank" class="text-white me-3">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@VotreNomUtilisateurTikTok" target="_blank" class="text-white">
-                        <i class="fab fa-tiktok fa-2x"></i>
-                    </a>
-                </div>
-      
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -220,9 +222,7 @@
                 navbar.classList.remove('scrolled');
             }
         });
-    
     </script>
-  
 </body>
 
 </html>
